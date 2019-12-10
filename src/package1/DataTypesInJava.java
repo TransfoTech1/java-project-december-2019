@@ -2,6 +2,8 @@ package package1;
 
 public class DataTypesInJava {
 
+    String location = "NY";
+
     public static void main(String[] args) {
         // use each data types 10 times and print them accordingly
 
