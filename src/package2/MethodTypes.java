@@ -2,6 +2,14 @@ package package2;
 
 public class MethodTypes {
 
+    public static String name = "Transfotech";
+    public int year = 2010;
+
+    public static void method2() {
+        System.out.println("My Name from Void Method");
+        System.out.println("whatever you want");
+    }
+
     //Access Specifiers :
     // 1. public : starts with public -- public String location = "Queens";
     // 2. private : starts with private -- private String location = "Queens";
@@ -15,11 +23,6 @@ public class MethodTypes {
     // method body -- whatever we want to do
     // } -- method body ends
 
-    public static void method2() {
-        System.out.println("My Name from Void Method");
-        System.out.println("whatever you want");
-    }
-
     public static void main(String[] args) {
         method2();
         MethodTypes methodTypes = new MethodTypes();
@@ -29,10 +32,14 @@ public class MethodTypes {
         System.out.println(variableName);
     }
 
-    // return type methods
-
     public static int method4() {
         return 10;
+    }
+
+    // return type methods
+
+    public void testMethod11() {
+        String id = "NY_23425";
     }
 
     //access-specifier (static)keyword datatypes method-name(){}
