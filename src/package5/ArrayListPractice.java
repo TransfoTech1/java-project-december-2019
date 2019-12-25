@@ -1,6 +1,7 @@
 package package5;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class ArrayListPractice {
 
@@ -30,10 +31,23 @@ public class ArrayListPractice {
         System.out.println("******************");
 
 
-        ArrayList<Object> everything = new ArrayList<>();
+        ArrayList<Object> objectArrayList = new ArrayList<>();
+        objectArrayList.add(1);
+        objectArrayList.add("New York");
+        objectArrayList.add("Queens");
+        objectArrayList.add(true);
 
-        everything.add(1);
-        everything.add("New York");
+
+        System.out.println(objectArrayList);
+
+        for (int x = 0; x < objectArrayList.size(); x++) {
+            System.out.println(objectArrayList.get(x));
+        }
+
+        Iterator iterator = objectArrayList.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
 
 
     }
