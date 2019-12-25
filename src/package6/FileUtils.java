@@ -1,6 +1,8 @@
 package package6;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Properties;
 
 public class FileUtils {
@@ -47,9 +49,9 @@ public class FileUtils {
         System.out.println(names);*/
 
         Properties properties = readFromPropertiesFile();
-        System.out.println(properties.getProperty("year"));
+        /*System.out.println(properties.getProperty("year"));
         System.out.println(properties.getProperty("month"));
-        System.out.println(properties.getProperty("day"));
+        System.out.println(properties.getProperty("day"));*/
 
 
         // classwork --- homework
@@ -60,6 +62,25 @@ public class FileUtils {
         // key -- arraylist.get(0)
         // value -- properties.getProperty(arraylist.get(0))
         // store the key and the value in a hashmap and print from the hashmap
+
+        ArrayList<String> arrayList = new ArrayList<>();
+        HashMap<String, String> map = new HashMap<>();
+        arrayList.add("year");
+        arrayList.add("month");
+        arrayList.add("day");
+
+        for (int i = 0; i < arrayList.size(); i++) {
+
+            //arrayList.get(i) --- key , year
+            //properties.getProperty(arrayList.get(i)) -- value, 2019
+            //properties.getProperty("year");
+
+            map.put(arrayList.get(i), properties.getProperty(arrayList.get(i)));
+        }
+
+        System.out.println(map);
+
+
     }
 
 }
