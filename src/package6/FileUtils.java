@@ -11,7 +11,7 @@ public class FileUtils {
         String dataFromFile = "";
         String container;
         try {
-            FileReader fileReader = new FileReader("src/package6/data/example.txt");
+            FileReader fileReader = new FileReader("src/package6/data/example2.txt");
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             while ((container = bufferedReader.readLine()) != null) {
                 dataFromFile = dataFromFile + "\n" + container;
